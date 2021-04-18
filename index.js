@@ -51,6 +51,13 @@ new Vue({
                     document.getElementById(that.set.id).style.border="none";
                     e.target.textContent="";
                     that.set.textContent="";
+                    let Id=e.target.id;
+                    let Id2=that.set.id;
+                    let index=Number(Id.substr(Id.indexOf('-')+1))-1;
+                    let index2=Number(Id2.substr(Id2.indexOf('-')+1))-1;
+                    that.number[index]="";
+                    that.number[index2]="";
+                    
                     that.pair1="";
                     that.pair2="";
                     that.set=undefined;
@@ -74,6 +81,7 @@ new Vue({
             let Id=e.target.id;
             let index=Number(Id.substr(Id.indexOf('-')+1))-1;
             e.target.textContent=this.number[index];
+            
             if(this.set===undefined){
                 this.set=e.target;
             }
