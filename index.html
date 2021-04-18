@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>shinkei</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+    </head>
+    <body>
+        <div id="game">
+            <table id="cards">
+                <tr>
+                    <td id="card-1" class="card" v-on:click="onclick">{{card1}}</td>
+                    <td id="card-2" class="card" v-on:click="onclick">{{card2}}</td>
+                    <td id="card-3" class="card" v-on:click="onclick">{{card3}}</td>
+                    <td id="card-4" class="card" v-on:click="onclick">{{card4}}</td>
+                </tr>
+                <tr>
+                    <td id="card-5" class="card" v-on:click="onclick">{{card5}}</td>
+                    <td id="card-6" class="card" v-on:click="onclick">{{card6}}</td>
+                    <td id="card-7" class="card" v-on:click="onclick">{{card7}}</td>
+                    <td id="card-8" class="card" v-on:click="onclick">{{card8}}</td>
+                </tr>
+                    <td id="card-9" class="card" v-on:click="onclick">{{card9}}</td>
+                    <td id="card-10" class="card" v-on:click="onclick">{{card10}}</td>
+                    <td id="card-11" class="card" v-on:click="onclick">{{card11}}</td>
+                    <td id="card-12" class="card" v-on:click="onclick">{{card2}}</td>
+                </tr>
+                <tr>
+                    <td id="card-13" class="card" v-on:click="onclick">{{card13}}</td>
+                    <td id="card-14" class="card" v-on:click="onclick">{{card14}}</td>
+                    <td id="card-15" class="card" v-on:click="onclick">{{card15}}</td>
+                    <td id="card-16" class="card" v-on:click="onclick">{{card16}}</td>
+                </tr>
+            </table>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
