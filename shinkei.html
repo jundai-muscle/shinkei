@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>shinkei</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="game">
-            <table id="cards">
-                <tr>
-                    <td id="card-1" class="card" ></td>
-                    <td id="card-2" class="card" ></td>
-                    <td id="card-3" class="card" ></td>
-                    <td id="card-4" class="card" ></td>
-                </tr>
-                <tr>
-                    <td id="card-5" class="card" ></td>
-                    <td id="card-6" class="card" ></td>
-                    <td id="card-7" class="card" ></td>
-                    <td id="card-8" class="card" ></td>
-                </tr>
-                    <td id="card-9" class="card" ></td>
-                    <td id="card-10" class="card" ></td>
-                    <td id="card-11" class="card" ></td>
-                    <td id="card-12" class="card" ></td>
-                </tr>
-                <tr>
-                    <td id="card-13" class="card" ></td>
-                    <td id="card-14" class="card" ></td>
-                    <td id="card-15" class="card" ></td>
-                    <td id="card-16" class="card" ></td>
-                </tr>
-            </table>
-        </div>
-        <script src="shinkei.js"></script>
-    </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Concentrate</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="card_dealer.js"></script>
+</head>
+<body>
+<spna id="player-1-score"></spna> <span id="player-2-score"></span>
+<button type="button" id="new-game" v-on:click="newGame">NEW GAME</button>
+<div id="game">
+  <table id="cards">
+      <tr>
+          <td id="cell-1" class="card" ></td>
+          <td id="cell-2" class="card" ></td>
+          <td id="cell-3" class="card" ></td>
+          <td id="cell-4" class="card" ></td>
+      </tr>
+      <tr>
+          <td id="cell-5" class="card" ></td>
+          <td id="cell-6" class="card" ></td>
+          <td id="cell-7" class="card" ></td>
+          <td id="cell-8" class="card" ></td>
+      </tr>
+          <td id="cell-9" class="card" ></td>
+          <td id="cell-10" class="card" ></td>
+          <td id="cell-11" class="card" ></td>
+          <td id="cell-12" class="card" ></td>
+      </tr>
+      <tr>
+          <td id="cell-13" class="card" ></td>
+          <td id="cell-14" class="card" ></td>
+          <td id="cell-15" class="card" ></td>
+          <td id="cell-16" class="card" ></td>
+      </tr>
+  </table>
+</div>
+<script src="main.js"></script>
+
+</body>
 </html>
