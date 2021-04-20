@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>shinkei</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
-    </head>
-    <body>
-        <div id="game">
-            <table id="cards">
-                <tr>
-                    <td id="card-1" class="card" v-on:click="onclick">{{card1}}</td>
-                    <td id="card-2" class="card" v-on:click="onclick">{{card2}}</td>
-                    <td id="card-3" class="card" v-on:click="onclick">{{card3}}</td>
-                    <td id="card-4" class="card" v-on:click="onclick">{{card4}}</td>
-                </tr>
-                <tr>
-                    <td id="card-5" class="card" v-on:click="onclick">{{card5}}</td>
-                    <td id="card-6" class="card" v-on:click="onclick">{{card6}}</td>
-                    <td id="card-7" class="card" v-on:click="onclick">{{card7}}</td>
-                    <td id="card-8" class="card" v-on:click="onclick">{{card8}}</td>
-                </tr>
-                    <td id="card-9" class="card" v-on:click="onclick">{{card9}}</td>
-                    <td id="card-10" class="card" v-on:click="onclick">{{card10}}</td>
-                    <td id="card-11" class="card" v-on:click="onclick">{{card11}}</td>
-                    <td id="card-12" class="card" v-on:click="onclick">{{card2}}</td>
-                </tr>
-                <tr>
-                    <td id="card-13" class="card" v-on:click="onclick">{{card13}}</td>
-                    <td id="card-14" class="card" v-on:click="onclick">{{card14}}</td>
-                    <td id="card-15" class="card" v-on:click="onclick">{{card15}}</td>
-                    <td id="card-16" class="card" v-on:click="onclick">{{card16}}</td>
-                </tr>
-            </table>
-        </div>
-        <script src="index.js"></script>
-    </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Concentrate</title>
+  <link rel="stylesheet" href="shinkei.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="card_dealer.js"></script>
+</head>
+<body>
+    <div id="player1">
+        <span>Player1</span><br><span id="player-1-score"></span><br>
+    </div>
+    <div id="player2">
+        <span>Player2</span><br><span id="player-2-score"></span><br>
+    </div>
+    <div id="game">
+    <table id="cards">
+        <tr>
+            <td id="cell-1" class="field" ><div class="card"></div></td>
+            <td id="cell-2" class="field" ><div class="card"></div></td>
+            <td id="cell-3" class="field" ><div class="card"></div></td>
+            <td id="cell-4" class="field" ><div class="card"></div></td>
+        </tr>
+        <tr>
+            <td id="cell-5" class="field" ><div class="card"></div></td>
+            <td id="cell-6" class="field" ><div class="card"></div></td>
+            <td id="cell-7" class="field" ><div class="card"></div></td>
+            <td id="cell-8" class="field" ><div class="card"></div></td>
+        </tr>
+            <td id="cell-9" class="field" ><div class="card"></div></td>
+            <td id="cell-10" class="field" ><div class="card"></div></td>
+            <td id="cell-11" class="field" ><div class="card"></div></td>
+            <td id="cell-12" class="field" ><div class="card"></div></td>
+        </tr>
+        <tr>
+            <td id="cell-13" class="field" ><div class="card"></div></td>
+            <td id="cell-14" class="field" ><div class="card"></div></td>
+            <td id="cell-15" class="field" ><div class="card"></div></td>
+            <td id="cell-16" class="field" ><div class="card"></div></td>
+        </tr>
+    </table>
+    <button type="button" id="new-game" v-on:click="newGame">NEW GAME</button>
+    </div>
+    <script src="shinkei.js"></script>
+
+</body>
 </html>
